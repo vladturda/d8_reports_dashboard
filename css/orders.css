@@ -1,0 +1,32 @@
+.d8-reports-dashboard-orders .d8-reports-dashboard-orders-intervals {
+    text-align: right;
+}
+
+.d8-reports-dashboard-orders ul.intervals-list li.intervals-item {
+    list-style: none;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.d8-reports-dashboard-orders-view {
+    vertical-align: top;
+}
+
+.d8-reports-dashboard-orders-chart {
+    display: block;
+    min-height: 430px;
+}
+
+@media screen and (min-width: 768px) {
+    .d8-reports-dashboard-orders .d8-reports-dashboard-orders-table {
+        display: inline-block;
+        vertical-align: top;
+        width: 46%;
+        margin-right: 3%;
+    }
+    .d8-reports-dashboard-orders .d8-reports-dashboard-purchases-chart {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+    }
+}

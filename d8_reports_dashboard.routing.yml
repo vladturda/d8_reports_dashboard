@@ -1,0 +1,8 @@
+d8_reports_dashboard:
+  path: '/admin/commerce/reports/dashboard/{view}'
+  defaults:
+    _title: 'Reporting Dashboard'
+    _controller: '\Drupal\d8_reports_dashboard\Controller\ReportsDashboardController::buildDashboard'
+    view: 'orders'
+  requirements:
+    _permission: 'access d8_reports_dashboard'

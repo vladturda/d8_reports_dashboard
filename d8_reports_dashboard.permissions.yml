@@ -1,0 +1,6 @@
+access d8_reports_dashboard:
+  title: 'Access d8_reports_dashboard'
+  restrict access: true
+administer d8_reports_dashboard configuration:
+  title: 'Administer d8_reports_dashboard configuration'
+  restrict access: true

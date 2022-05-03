@@ -1,0 +1,50 @@
+{#
+/**
+ * @file
+ * Template for Subscriber Reports Dashboard.
+ *
+ * Available variables:
+ * - info: information about this view
+ * - chart: chart display view blocks array
+ * - table: table display view blocks array
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="d8-reports-dashboard-subscribers-views">
+  <div class="d8-reports-dashboard-subscribers-view d8-reports-dashboard-subscribers-chart">
+    <h4>
+      {{ info.interval_string|capitalize }} Subscribers
+      {% if info.dates %} for {% endif %}
+      {{ info.dates.min }}
+      {% if info.dates.min and info.dates.max %} to {% endif %}
+      {{ info.dates.max }}
+    </h4>
+    {{ chart.subscribers }}
+  </div>
+
+  <div class="d8-reports-dashboard-subscribers-view d8-reports-dashboard-subscribers-churn">
+    <h4>Churn</h4>
+    {% if info.churn %}
+    <table>
+      <tr><td class="churn_stat">Initial customer count</td><td class="churn_val">{{ info.churn.initial_subscriber_count }}</td></tr>
+      <tr><td class="churn_stat">Final customer count</td><td class="churn_val">{{ info.churn.final_subscriber_count }}</td></tr>
+      <tr><td class="churn_stat">Net gain</td><td class="churn_val">{{ info.churn.net_gain }}</td></tr>
+      <tr><td class="churn_stat">Days</td><td class="churn_val">{{ info.churn.day_count }}</td></tr>
+      <tr><td class="churn_stat">Customer days</td><td class="churn_val">{{ info.churn.subscriber_day_total }}</td></tr>
+      <tr><td class="churn_stat">Lapses</td><td class="churn_val">{{ info.churn.lapse_total }}</td></tr>
+      <tr><td class="churn_stat">Cancelations</td><td class="churn_val">{{ info.churn.cancel_total }}</td></tr>
+      <tr><td class="churn_stat">Total churn</td><td class="churn_val">{{ info.churn.churn_total }}</td></tr>
+      <tr><td class="churn_stat">Churn per customer day</td><td class="churn_val">{{ info.churn.churn_subscriber_day }}</td></tr>
+      <tr><td class="churn_stat">Churn rate</td><td class="churn_val">{{ info.churn.churn_rate }}%</td></tr>
+    </table>
+    {% else %}
+      <div class="view-empty">No results</div>
+    {% endif %}
+  </div>
+
+  <div class="d8-reports-dashboard-subscribers-view d8-reports-dashboard-subscribers-table">
+    <h4>Subscribers</h4>
+    {{ table.churn }}
+  </div>
+</div>

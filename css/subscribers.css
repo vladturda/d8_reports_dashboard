@@ -1,0 +1,30 @@
+.d8-reports-dashboard-subscribers-views {
+    margin-top: 45px;
+}
+
+.d8-reports-dashboard-subscribers-view {
+    vertical-align: top;
+}
+
+.d8-reports-dashboard-subscribers-churn table td.churn_val {
+    text-align: right;
+}
+
+.d8-reports-dashboard-subscribers-chart {
+    display: block;
+    min-height: 430px;
+}
+
+@media screen and (min-width: 1024px) {
+    .d8-reports-dashboard-subscribers .d8-reports-dashboard-subscribers-churn {
+        display: inline-block;
+        vertical-align: top;
+        width: 18rem;
+        margin-right: 2rem;
+    }
+    .d8-reports-dashboard-subscribers .d8-reports-dashboard-subscribers-table {
+        display: inline-block;
+        vertical-align: top;
+        width: calc( 100% - 21rem );
+    }
+}

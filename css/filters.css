@@ -1,0 +1,72 @@
+.d8-reports-dashboard-filters-block {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #666666;
+    position: relative;
+    margin-bottom: 1em;
+    padding-top: 2em;
+    z-index: 10;
+}
+
+.d8-reports-dashboard-filters-block .d8-reports-dashboard-view-tabs {
+    display: inline-flex;
+    align-items: end;
+}
+
+.d8-reports-dashboard-filters-block .d8-reports-dashboard-view-tab {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #EEEEEE;
+    border: 1px solid #666666;
+    border-bottom: 0;
+    margin: 0 0.25em;
+    padding: 0.5em 1em;
+    line-height: 28px;
+}
+
+.d8-reports-dashboard-filters-block .d8-reports-dashboard-view-tab.active-tab {
+    background-color: #FFFFFF;
+    position: relative;
+    bottom: -1px;
+    padding-bottom: calc(0.5em + 1px);
+}
+
+#d8-reports-dashboard-filters {
+    display: inline-flex;
+    align-items: end;
+    position: relative;
+}
+
+#d8-reports-dashboard-filters .form-item {
+    display: inline-flex;
+    margin: 0.5em 0.5em;
+}
+
+#d8-reports-dashboard-filters .form-actions {
+    display: inline-flex;
+    margin: 0.5em 0em;
+}
+
+#d8-reports-dashboard-filters .form-item-date-min,
+#d8-reports-dashboard-filters .form-item-date-max {
+    width: 150px;
+}
+
+#d8-reports-dashboard-filters .form-item-date-multi {
+    width: 200px;
+}
+
+#d8-reports-dashboard-filters .form-item-date {
+    width: 200px;
+}
+
+.d8-reports-dashboard-filters-block  .datepicker-dropdown {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(227, 227, 227);
+}
+
+.d8-reports-dashboard-filters-block  .datepicker-dropdown th,
+.d8-reports-dashboard-filters-block  .datepicker-dropdown td {
+    padding: 5px 5px;
+}

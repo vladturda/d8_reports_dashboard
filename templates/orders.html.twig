@@ -1,0 +1,38 @@
+{#
+/**
+ * @file
+ * Template for Order Reports Dashboard.
+ *
+ * Available variables:
+ * - info: information about this view
+ * - chart: chart display view blocks array
+ * - table: table display view blocks array
+ * - intervals: links for reporting intervals
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="d8-reports-dashboard-orders-intervals">
+  {{ intervals }}
+</div>
+
+<div class="d8-reports-dashboard-orders-views">
+  <div class="d8-reports-dashboard-orders-view d8-reports-dashboard-orders-chart">
+    <h4>
+      {{ info.interval_string|capitalize }} Orders
+      {% if info.dates %} for {% endif %}
+      {{ info.dates.min }}
+      {% if info.dates.min and info.dates.max %} to {% endif %}
+      {{ info.dates.max }}
+    </h4>
+    {{ chart.orders }}
+  </div>
+  <div class="d8-reports-dashboard-orders-view d8-reports-dashboard-orders-table">
+    <h4>Orders</h4>
+    {{ table.orders }}
+  </div>
+  <div class="d8-reports-dashboard-orders-view d8-reports-dashboard-purchases-chart">
+    <h4>Purchased Items</h4>
+    {{ chart.purchases }}
+  </div>
+</div>

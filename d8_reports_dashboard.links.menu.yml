@@ -1,0 +1,5 @@
+d8_reports_dashboard:
+  title: 'DYWM Reports Dashboard'
+  description: 'View sales and subscriber reports.'
+  parent: system.admin_reports
+  route_name: d8_reports_dashboard

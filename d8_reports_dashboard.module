@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for DYWM Reports Dashboard module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function d8_reports_dashboard_theme() {
+  return [
+    'dashboard' => [
+      'variables' => [ 
+        'filters' => [],
+        'view' => [],
+      ],
+    ],
+
+    'orders' => [
+      'variables' => [
+        'info' => [],
+        'chart' => [],
+        'table' => [],
+        'intervals' => []
+      ],
+    ],
+
+    'subscribers' => [
+      'variables' => [
+        'info' => [],
+        'chart' => [],
+        'table' => [],
+      ],
+    ],
+    
+    'filters' => [
+      'variables' => [
+        'views' => [],
+        'form' => []
+      ]
+    ]
+  ];
+}

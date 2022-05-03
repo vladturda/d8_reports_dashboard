@@ -1,0 +1,29 @@
+filters:
+  js:
+    js/filters.js: {}
+    https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js: { type: external }
+  css:
+    component:
+      css/filters.css: {}
+      https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css: { type: external }
+  dependencies:
+    - core/drupalSettings
+
+orders:
+  js:
+    js/orders.js: {}
+  css:
+    component:
+      css/orders.css: {}
+  dependencies:
+    - core/drupalSettings
+
+subscribers:
+  js:
+    js/subscribers.js: {}
+  css:
+    component:
+      css/subscribers.css: {}
+  dependencies:
+    - core/drupalSettings
+    
